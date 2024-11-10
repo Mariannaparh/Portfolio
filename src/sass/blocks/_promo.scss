@@ -1,0 +1,48 @@
+.promo {
+        display: grid;
+        background: url('../img/main_bg.jpg') no-repeat center/cover;
+    &__wrapper {
+        display: grid;
+        align-items: center;
+        min-height: 100vh;
+        grid-template-columns: 2fr 1fr; 
+    }
+    &__title {
+        max-width: 100%; 
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 150px;
+    }
+    &__subtitle {
+        @include before_circle;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 300px;
+    }
+    &__link {
+        color: #000;
+        &:hover {
+            color: #000!important;
+            text-decoration: none;
+        }
+    }
+    &__photo {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}

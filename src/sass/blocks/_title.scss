@@ -1,0 +1,72 @@
+.title {
+    font-size: 36px;
+    line-height: 60px;
+    &_fz12 {
+        font-size: 12px;
+        text-align: center;
+        &.rights {
+            padding-top: 30px;
+        }
+        h5 {
+            text-align: center;
+
+        }
+        h5.privacy {
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        a {
+            color: #fff;
+        }
+    }
+    &_fz16 {
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: .4px;
+    }
+    &_seo {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_fz18 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &_fz16-seo {
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fz26 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    &_fz28 {
+        font-size: 28px;
+    }
+    &_fz30 {
+        font-size: 30px;
+    }
+    &_fz50 {
+        font-size: 70px;
+    }
+    &__section-title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle {
+        text-align: center;
+    }
+}
