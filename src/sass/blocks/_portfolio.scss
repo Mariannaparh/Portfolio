@@ -30,8 +30,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(157, 173, 196, 0.15);
+            background-color: rgba(157, 173, 196, 0.05);
             pointer-events: none;
+            border: 0.5px solid #2C2C2C;
         }
         &:hover {
             &::before {
